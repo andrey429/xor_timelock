@@ -1,0 +1,14 @@
+License: free to use
+
+This is a PoC for "Antiemulation Through Time-lock Puzzles" conception
+
+http://people.csail.mit.edu/rivest/pubs/RSW96.pdf (english article by Tim Ebringer)
+http://www.moluch.ru/archive/37/4202/ (russian article)
+
+------------------------
+Source file information:
+------------------------
+
+Packer.cpp - App used to produce timelock and inject it into Unpacker
+Unpacker.cpp - Container which calculates timelock, extracts encrypted data, and runs it
+
