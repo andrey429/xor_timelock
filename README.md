@@ -17,13 +17,13 @@ Source file information:
 Timelock details:
 ----------------
 **data**, represented by malware file, is encrypted by simple XOR-ing it with a long **key**.
-**key** is calculated as: **key** = <em>a</em>^(<em>2</em>^<em>t</em>) <em>(mod n)</em>, where <em>n</em> = <em>p</em>*<em>q</em> and
-<em>p,q</em> are large enough primes; <em>t</em> is a variable "time" parameter.
+**key** is calculated as: **key** = <em>**a**</em>^(<em>**2**</em>^<em>**t**</em>) <em>(mod **n**)</em>, where <em>**n**</em> = <em>**p**</em>*<em>**q**</em> and
+<em>**p,q**</em> are large enough primes; <em>**t**</em> is a variable "time" parameter.
 
-In theory, such calculation of <em>a</em> is <em>one-way</em>, that is, it can be simply calculated by the producing party, 
-and is irreversible by third party: given an <em>f(x)</em> you cannot estimate <em>x</em> argument (in our terms - **key**) in any acceptable period of time (simply put, it is VERY long to estimate).
+In theory, such calculation of <em>**a**</em> is <em>one-way</em>, that is, it can be simply calculated by the producing party, 
+and is irreversible by third party: given an <em>**f(x)**</em> you cannot estimate <em>**x**</em> argument (in our terms - **key**) in any acceptable period of time (simply put, it is VERY long to estimate).
 
-Payloaded executable file, on execution, tries to unpack the encrypted malware file by performing long operation of exponentiation (see above definition of **a**).
+Payloaded executable file, on execution, tries to unpack the encrypted malware file by performing long operation of exponentiation (see above definition of <em>**a**</em>).
 On success, it writes the decrypted stuff to a disk and execute it.
 
 **What we try to do** is determine, if such a timelock gets executed by antivirus emulator.
