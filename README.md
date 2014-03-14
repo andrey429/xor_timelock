@@ -17,7 +17,7 @@ Source file information:
 Timelock details:
 ----------------
 **data**, represented by malware file, is encrypted by simple XOR-ing it with a long **key**.
-**key** is calculated as: **key** = <em>**a**</em>^(<em>**2**</em>^<em>**t**</em>) <em>(mod **n**)</em>, where <em>**n**</em> = <em>**p**</em>*<em>**q**</em> and
+**key** is calculated as: **key** = <em>**a**</em>^(<em>**2**</em>^<em>**t**</em>) <em>(mod **n**)</em>, where <em>**n**</em> = <em>**p**</em> \* <em>**q**</em> and
 <em>**p,q**</em> are large enough primes; <em>**t**</em> is a variable "time" parameter.
 
 In theory, such calculation of <em>**a**</em> is <em>one-way</em>, that is, it can be simply calculated by the producing party, 
