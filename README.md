@@ -1,10 +1,11 @@
 xor_timelock
 ============
 
-This is a PoC for **Antiemulation Through Time-lock Puzzles**:
+This is a PoC of **Antiemulation Through Time-lock Puzzles**:
 
-http://people.csail.mit.edu/rivest/pubs/RSW96.pdf (article on timelock-puzzles)
-http://www.moluch.ru/archive/37/4202/ (russian article by me :) it provides some testing results on a **real malware** scope)
+[Article on timelock-puzzles by Rivest, Shamir and co](http://people.csail.mit.edu/rivest/pubs/RSW96.pdf) 
+
+[My article ](http://www.moluch.ru/archive/37/4202) provides some testing results on a **real malware** scope)
 
 
 Source file information:
@@ -15,7 +16,7 @@ Source file information:
 
 Timelock details:
 ----------------
-**data**, represented by malware file, is descrypted by simple XOR-ing it with a long **key**.
+**data**, represented by malware file, is encrypted by simple XOR-ing it with a long **key**.
 **key** is calculated as: **key** = <em>a</em>^(<em>2</em>^<em>t</em>) <em>(mod n)</em>, where <em>n</em> = <em>p</em>*<em>q</em> and
 <em>p,q</em> are large enough primes; <em>t</em> is a variable "time" parameter.
 
