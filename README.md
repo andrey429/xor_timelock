@@ -5,7 +5,7 @@ This is a PoC of **Antiemulation Through Time-lock Puzzles**:
 
 [Article on timelock-puzzles by Rivest, Shamir and co](http://people.csail.mit.edu/rivest/pubs/RSW96.pdf) 
 
-[My article ](http://www.moluch.ru/archive/37/4202) provides some testing results on a **real malware** scope)
+[My article ](http://www.moluch.ru/archive/37/4202) provides some testing results on a **real malware** scope
 
 
 Source file information:
